@@ -226,6 +226,8 @@ The port number of the HTTP proxy server. If not specified, the default value is
 
 {% /iflang %}
 
+{% iflang langs="cpp,csharp,java,js,matlab,python,ruby,swift" %}
+
 ## Ice.ImplicitContext
 
 {% property-synopsis %}
@@ -238,12 +240,13 @@ The port number of the HTTP proxy server. If not specified, the default value is
 
 Specifies whether a communicator has an
 [implicit request context](../../runtime/invocation/request-contexts/implicit-request-contexts) and, if so, at what
-scope the context applies. Legal values for this property are `None` (equivalent to the empty string), `PerThread`, and
-`Shared`. If not specified, the default value is `None`.
+scope the context applies. Legal values for this property are `None` (equivalent to the empty
+string){% iflang langs="cpp,csharp,java,matlab,python,ruby,swift" %}, `PerThread`,{% /iflang %} and `Shared`. If not
+specified, the default value is `None`.
 
 {% /property-description %}
 
-{% language-section name="ice.implicitcontext" /%}
+{% /iflang %}
 
 {% iflang langs="cpp,csharp,java,matlab,php,python,ruby,swift" %}
 
